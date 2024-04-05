@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic;
+
 namespace pryJuaniPeriotti_Lab3
 {
     public partial class frmLogin : Form
@@ -10,9 +12,16 @@ namespace pryJuaniPeriotti_Lab3
         
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (txtPassword != null && txtPassword != null)
+            string user = txtUsuario.Text;
+            string psswrd = txtPassword.Text;
+            if (user == "" || psswrd == "")
             {
-
+                MessageBox.Show("Por favor ingrese su usuario y contraseña");
+            }
+            else
+            {
+                frmFirma firma = new frmFirma();
+                firma.Show();
             }
         }
     }
