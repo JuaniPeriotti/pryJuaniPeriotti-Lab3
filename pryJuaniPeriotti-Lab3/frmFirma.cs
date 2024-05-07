@@ -45,7 +45,7 @@ namespace pryJuaniPeriotti_Lab3
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            pbFirmar
+            this.Close();
         }
     }
 }
