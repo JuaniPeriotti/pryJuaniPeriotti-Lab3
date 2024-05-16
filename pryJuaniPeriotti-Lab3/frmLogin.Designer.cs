@@ -102,6 +102,7 @@
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // frmLogin
             // 
@@ -112,6 +113,7 @@
             Controls.Add(btnAceptar);
             Controls.Add(groupBox1);
             Name = "frmLogin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

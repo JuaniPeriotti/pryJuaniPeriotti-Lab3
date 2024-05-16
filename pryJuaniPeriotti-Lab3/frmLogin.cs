@@ -1,4 +1,5 @@
 using Microsoft.VisualBasic;
+using System.Diagnostics;
 
 namespace pryJuaniPeriotti_Lab3
 {
@@ -9,7 +10,7 @@ namespace pryJuaniPeriotti_Lab3
             InitializeComponent();
         }
 
-        
+
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             string user = txtUsuario.Text;
@@ -23,6 +24,11 @@ namespace pryJuaniPeriotti_Lab3
                 frmFirma firma = new frmFirma();
                 firma.Show();
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

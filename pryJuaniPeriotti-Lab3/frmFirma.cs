@@ -40,7 +40,15 @@ namespace pryJuaniPeriotti_Lab3
 
         private void btnAceptar_Click_1(object sender, EventArgs e)
         {
-            archivoImagen.Save("Firma.jpg");
+            string fechaDia = "", fechaHora = "", fechaMes = "", fechaAno = "", fechaMinutos = "", fechaHoy = "";
+            fechaDia = DateTime.Now.Day.ToString();
+            fechaHora = DateTime.Now.Hour.ToString();
+            fechaMes = DateTime.Now.Month.ToString();
+            fechaAno = DateTime.Now.Year.ToString();
+            fechaMinutos = DateTime.Now.Day.ToString();
+            fechaHoy = fechaAno + "." + fechaMes + "." + fechaDia + "." + fechaHora + "." + fechaMinutos;
+            archivoImagen.Save(@"../../../" + "/Firma/" + fechaHoy + ".jpg");
+            MessageBox.Show("Su firma se registró correctamente.");
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)

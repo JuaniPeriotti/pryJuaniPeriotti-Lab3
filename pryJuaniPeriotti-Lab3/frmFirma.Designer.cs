@@ -30,7 +30,7 @@
         {
             label1 = new Label();
             btnAceptar = new Button();
-            btnBorrar = new Button();
+            btnCancelar = new Button();
             lblEjeX = new Label();
             lblEjeY = new Label();
             pbFirmar = new PictureBox();
@@ -56,15 +56,15 @@
             btnAceptar.UseVisualStyleBackColor = true;
             btnAceptar.Click += btnAceptar_Click_1;
             // 
-            // btnBorrar
+            // btnCancelar
             // 
-            btnBorrar.Location = new Point(433, 394);
-            btnBorrar.Name = "btnBorrar";
-            btnBorrar.Size = new Size(75, 23);
-            btnBorrar.TabIndex = 2;
-            btnBorrar.Text = "Borrar";
-            btnBorrar.UseVisualStyleBackColor = true;
-            btnBorrar.Click += btnBorrar_Click;
+            btnCancelar.Location = new Point(433, 394);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(75, 23);
+            btnCancelar.TabIndex = 2;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnBorrar_Click;
             // 
             // lblEjeX
             // 
@@ -103,10 +103,11 @@
             Controls.Add(pbFirmar);
             Controls.Add(lblEjeY);
             Controls.Add(lblEjeX);
-            Controls.Add(btnBorrar);
+            Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
             Controls.Add(label1);
             Name = "frmFirma";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmFirma";
             ((System.ComponentModel.ISupportInitialize)pbFirmar).EndInit();
             ResumeLayout(false);
@@ -117,7 +118,7 @@
 
         private Label label1;
         private Button btnAceptar;
-        private Button btnBorrar;
+        private Button btnCancelar;
         private Label lblEjeX;
         private Label lblEjeY;
         private PictureBox pbFirmar;
